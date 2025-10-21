@@ -7,7 +7,7 @@ import os  # We need this to read the port from Render
 print("Loading model and tokenizer...")
 model = AutoModelForCausalLM.from_pretrained(
     "microsoft/Phi-3-mini-4k-instruct", 
-    torch_dtype="auto", 
+    dtype="auto", 
     trust_remote_code=True,
     device_map="auto"
 )
